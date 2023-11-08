@@ -5,6 +5,12 @@ body {
     margin: 0 auto;
     width: 375px;
 }
+main{
+    position: relative;
+    top:-80px;
+    background-color: white;
+    z-index: -1;
+}
 .smooth {
     background: rgb(33,4,217);
     background: linear-gradient(90deg, rgba(33,4,217,1) 0%, rgba(2,8,115,1) 35%, rgba(2,0,36,1) 100%);
@@ -19,14 +25,14 @@ label{
 }
 ul{
     list-style: none;
-    position: absolute;
-    top:-35px;
-    left: 250px;
     margin-bottom: 0px;
 }
 li{
     display: inline;
     float: left;
+    position: relative;
+    top: -215px;
+    left: 180px;
     padding-right: 50px;
     text-align: center;
 }
@@ -111,12 +117,18 @@ section, section p {
 p, dl, dd {
     font-size: 1em;
 }
+footer{
+    position: relative;
+    bottom: 80px;
+    background-color: white;
+
+}
 footer p {
     font-size: .75em;
     color: #590242;
     background-color: white;
-    padding-top: 30px;
     padding-bottom: 20px;
+    padding-top: 20px;
     margin: 0px;
     text-align: center;
 }
@@ -144,6 +156,10 @@ button:hover{
 #playlists p, #curated p{
     text-align: center;
 }
+#trending{
+    display: grid;
+    width: 100%;
+}
 .scroll{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -153,10 +169,11 @@ button:hover{
 .scroll section{
     margin: 10px;
     position: relative;
+    top: -40px;
 }
 .scroll div{
-    position: absolute;
-    top: 251px;
+    position: relative;
+    top: 311px;
     background-color: rgba(255,255,255,.75);
     padding: 5px;
     height: 50px;
@@ -310,13 +327,19 @@ audio ::-webkit-media-controls-enclosure{
 @media screen and (max-width: 768px){
     #navitems {
         box-sizing: border-box;
-        display: block;
-        width: 50%;
-        border-top: 1 px;
         display: none;
-        position: absolute;
-        top: 40px;
+        width: 50%;
+        position: relative;
+        top: -200px;
+        left: -40px;
         background-color: #030a8c;
+        z-index: 4;
+    }
+    ul, li{
+        background-color: #030a8c;
+    }
+    li {
+        padding-right: 0px;
     }
     #mainnav label{
         padding: 10px;
@@ -324,8 +347,12 @@ audio ::-webkit-media-controls-enclosure{
         margin-bottom: 0px;
         position:absolute;
         top:5px;
+        display: block;
     }
     #mainnav input:checked ~ #navitems {
         display: block;
+    }
+    a[href="#user"]{
+        padding-right: 61px;
     }
 }
