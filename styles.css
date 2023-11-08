@@ -1,5 +1,239 @@
-* {
+body {
     background-color: #020659;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+    width: 375px;
+}
+.smooth {
+    background: rgb(33,4,217);
+    background: linear-gradient(90deg, rgba(33,4,217,1) 0%, rgba(2,8,115,1) 35%, rgba(2,0,36,1) 100%);
+    margin-bottom: 0px;
+    padding: 0px 0px 30px 30px;
+    position: relative;
+    top: 0px;
+}
+header{
+    background-color: #030a8c;
+}
+h1 {
+    font-size: 1.25em;
+    margin: 0px 0px;
+    padding: 10px 10px;
+    font-variant-caps: small-caps;
+    position: relative;
+    left: 100px;
+    top: 5px;
+    font-weight:bold;
+}
+h2{
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-weight: bold;
+}
+h3{
+    color: #590242;
+    margin: 0px;
+    font-variant-caps: all-small-caps;
+    font-size: 1em;
+    font-weight: bold;
+}
+div p {
+    margin-bottom: 0px;
+}
+audio{
+    position: absolute;
+    bottom: 150px;
+    left: 5px;
+    opacity: 50%;
+}
+section > h3{
+    position: relative;
+    padding: 10px;
+    top: 10px;
+    left: 15px;
+    margin-bottom: 10px;
+}
+div h3, div p{
+    text-align: center;
+}
+dl{
+    display: flex;
+    margin:0px 10px;
+
+}
+dt{
+    color: #590242;
+    font-style: italic;
+}
+dd{
+    color: #590242;
+    margin-left: 5px;
+}
+div > h3{
+    margin: 5px 10px;
+}
+input {
+    display:none;
+}
+section, section p {
+    background-color: white;
+}
+p, dl, dd {
+    font-size: 1em;
+}
+footer p {
+    font-size: .75em;
+    color: #590242;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin: 0px;
+    text-align: center;
+}
+
+
+button{
+    text-decoration: none;
+    background-color: #590242;
+    color:white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    display: block;
+    text-align: center;
+    margin: 10px 0 30px 32px;
+    margin-bottom: 0px;
+    border: none;
+}
+button:hover{
+    background-color: #020659;
+}
+#navitems {
+    box-sizing: border-box;
+    display: block;
+    width: 50%;
+    border-top: 1 px;
+    display: none;
+    position: absolute;
+    top: 40px;
+    background-color: #030a8c;
+}
+#mainnav label{
+    padding: 10px;
+    background-color: #030a8c;
+    margin-bottom: 0px;
+    position:absolute;
+    top:5px;
+}
+#mainnav input:checked ~ #navitems {
+    display: block;
+}
+#playtitle{
+    color: #590242;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.scroll{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.scroll section{
+    margin: 10px;
+    position: relative;
+}
+.scroll div{
+    position: absolute;
+    top: 251px;
+    background-color: rgba(255,255,255,.75);
+    padding: 5px;
+    height: 50px;
+    width: 350px;
+}
+.scrollplay{
+    background-color: #2699fb;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x:auto;
+    overflow-y: hidden;
+}
+.scrollplay section{
+    margin:10px;
+    position:relative;
+    background-color:#0d8dfb ;
+}
+.scrollplay img, .scrollcur img{
+    padding: 10px;
+}
+.scrollplay p{
+    margin:15px;
+    background-color: #0d8dfb;
+}
+.scrollplay h3{
+    color: white;
+}
+.scrollcur h3{
+    color: white;
+}
+.scrollcur{
+    background-color:#030a8c;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.scrollcur section{
+    margin: 10px;
+    position: relative;
+    background-color:#020873;
+}
+.scrollcur p{
+    background-color: #020873;
+    margin: 15px;
+}
+.button {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+audio::-webkit-media-controls-mute-button{
+    background-color: white;
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-play-button{
+    background-color: white;
+    border-radius: 50%;
+}
+audio ::-webkit-media-controls-enclosure{
+    background-color: white;
+}
+#trending ::-webkit-scrollbar, #playlists::-webkit-scrollbar{
+    width: 15px;
+}
+#trending ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px #590242;
+}
+#trending ::-webkit-scrollbar-thumb{
+    background: #590242;
+    border-radius: 5px;
+}
+#trending ::-webkit-scrollbar-thumb:hover{
+    background: #020659;
+}
+#playlists::-webkit-scrollbar-thumb{
+    background: #020659;
+    border-radius: 5px;
+}
+#playlists::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 15px, #020659;
+}
+#playlists::-webkit-scrollbar-thumb:hover{
+    background: white;
+}
+@media screen and (min-width: 768px){
+   
 }
